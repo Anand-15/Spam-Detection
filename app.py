@@ -1,10 +1,12 @@
 import streamlit as st
 import pickle
+import nltk
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import string
 import sklearn
+nltk.download('stopwords')
 ps = PorterStemmer()
 def transform_text(text):
     text = text.lower()
